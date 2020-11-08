@@ -59,7 +59,7 @@ header nav ul li a {
 }
 
 footer {
-    background: var(--charcoal);
+    background: var(--off-yellow);
     width: 100%;
     padding: 20px 15px;
     display: flex;
@@ -78,11 +78,18 @@ section {
 }
 
 .hero {
-    background-image: url("../images/Ice_Test.png");
+    background-image: url("../images/DSC00001.JPG");
     background-size: cover;
-    background-position-y: 70%;
+    background-position-y: 60%;
     padding: 150px;
     display: flex;
     justify-content: left;
     flex-wrap: wrap;
+}
+
+.hero-subtitle {
+    color: var(--gold);
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
 }
