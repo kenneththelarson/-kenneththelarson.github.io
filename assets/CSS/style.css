@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --charcoal: #404E5C;
+    --gold: #B1740F;
+    --blue: #74A4BC;
+    --opal: #B6D6CC;
+    --off-yellow: #CAD49D;
+}
+
+body {
+    color: var(--opal);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    padding: 15px 35px;
+    background-color: var(--charcoal);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-size: cover;
+}
+
+header h1 {
+    font-weight: bold;
+    margin: 0;
+    font-size: 36px;
+    color: var(--off-yellow);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+header a {
+    text-decoration: none;
+    color: var(--off-yellow);
+}
+
+header nav {
+    margin: 5px 0;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+footer {
+    background: var(--charcoal);
+    width: 100%;
+    padding: 20px 15px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer div {
+    color: var(--off-yellow);
+    font-size: 16px;
+    margin: 0;
+}
+
+section {
+    padding: 60px;
+}
+
+.hero {
+    background-image: url("../images/Ice_Test.png");
+    background-size: cover;
+    background-position-y: 70%;
+    padding: 150px;
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+}
