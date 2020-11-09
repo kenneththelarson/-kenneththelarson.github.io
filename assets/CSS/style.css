@@ -67,7 +67,7 @@ header nav ul li a:hover {
 }
 
 footer {
-    background: var(--off-yellow);
+    background: var(--charcoal);
     width: 100%;
     padding: 20px 15px;
     display: flex;
@@ -105,4 +105,99 @@ section {
     display: flex;
     flex-wrap: wrap;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+
+.bio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.section-title {
+    border-right: 3px solid var(--charcoal);
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.bio div {
+    display: flex;
+}
+
+.bio p {
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+/* grid */
+.portfolio {
+    background: var(--off-yellow);
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+}
+
+.work-grid-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.work-grid-container {
+    width: 80%;
+    display: grid;
+    background: var(--off-yellow);
+    grid-template-columns: repeat(3, 4fr);
+    grid-template-rows: repeat(3, 2fr);
+    font-size: 1.2rem;
+    grid-gap: 20px;
+}
+
+.work-grid-item {
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    height: 150px;
+    color: var(--blue);
+}
+
+.work-grid-item div {
+    background: var(--blue);
+    color: var(--gold);
+    border-radius: 15px;
+    padding: 10px
+}
+
+.most-recent {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    height: 300px;
+}
+
+.most-recent {
+    background-image: url(../images/run-buddy.png);
+    background-size: cover;
+}
+
+.secrets-out {
+    background-image: url(../images/Secrets\ Out\ Insta.jpg);
+    background-size: cover;
+    background-position: 20%;
+}
+
+.herata {
+    background-image: url(../images/hqdefault.jpg);
+    background-size: cover;
+    background-position: 10%;
+}
+
+.goldfish {
+    background-image: url(../images/IMG_7256.jpg);
+    background-size: cover;
+    background-position: 30%;
 }
