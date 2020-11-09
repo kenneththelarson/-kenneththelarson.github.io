@@ -141,13 +141,13 @@ section {
 .work-grid-wrapper {
     display: flex;
     width: 100%;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
 .work-grid-container {
     width: 80%;
     display: grid;
-    background: var(--off-yellow);
     grid-template-columns: repeat(3, 4fr);
     grid-template-rows: repeat(3, 2fr);
     font-size: 1.2rem;
@@ -157,18 +157,30 @@ section {
 .work-grid-item {
     padding: 15px 0;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-end;
+    justify-content: left;
     text-align: left;
     height: 150px;
-    color: var(--blue);
+    color: var(--off-yellow);
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
 }
 
-.work-grid-item div {
-    background: var(--blue);
-    color: var(--gold);
-    border-radius: 15px;
-    padding: 10px
+.work-grid-item::after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: rgba(116, 164, 188, 0.3);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.work-grid-container:hover .work-grid-item::after {
+    opacity: 1;
 }
 
 .most-recent {
@@ -179,14 +191,33 @@ section {
     height: 300px;
 }
 
+.work-grid-item h4 {
+    position: relative;
+    z-index: 3;
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+.work-grid-item h5 {
+    position: relative;
+    z-index: 2;
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
 .most-recent {
     background-image: url(../images/run-buddy.png);
     background-size: cover;
 }
 
+.horiseon {
+    background-image: url(../images/horiseon.png);
+    background-size: cover;
+}
+
 .secrets-out {
     background-image: url(../images/Secrets\ Out\ Insta.jpg);
-    background-size: cover;
+    background-size: cover;    
     background-position: 20%;
 }
 
@@ -200,4 +231,18 @@ section {
     background-image: url(../images/IMG_7256.jpg);
     background-size: cover;
     background-position: 30%;
+}
+
+.contact-info {
+    padding: 20px;
+    display: flex;
+}
+
+.contact-info ul li {
+    text-align: left;
+    display: inline-flex;
+    padding: 10px 50px 10px 50px;
+    justify-content: center;
+    font-weight: bold;
+    text-decoration: underline;
 }
